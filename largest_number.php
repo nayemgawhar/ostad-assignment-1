@@ -18,5 +18,5 @@ if ($num3 > $largest) {
 }
 
 // Output the largest number
-echo "The largest number among $num1, $num2, and $num3 is: $largest";
+echo "The largest number among $num1, $num2 and $num3 is: $largest";
 ?>
