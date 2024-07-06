@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <style type="text/css">
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .profile-card {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+      }
+      .profile-card .pro {
+        color: #231e39;
+        background-color: #febb0b;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 3px 7px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+
+      .profile-card .round {
+        border: 1px solid #03bfcb;
+        border-radius: 50%;
+        padding: 3px;
+        margin-bottom: 5px;
+      }
+      .profile-card h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .profile-card h2 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #777;
+      }
+
+      .profile-card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333;
+      }
+      .card_info {
+        margin: 1em 0;
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .card_info li {
+        display: inline-block;
+        text-align: center;
+        padding: 0.5em;
+      }
+
+      .card_info_stats {
+        font-weight: bold;
+        font-size: 1.2em;
+        display: block;
+      }
+
+      .card_info_stats + span {
+        color: #969798;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+      .btns {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .btns button {
+        width: 100%;
+        background: #fff;
+        padding: 9px 0px;
+        outline: none;
+        border: 2px solid #8e44ad;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 400;
+        color: #8e44ad;
+        transition: all 0.3s linear;
+      }
+      .btns button:first-child {
+        margin-right: 5px;
+      }
+      .btns button:last-child {
+        margin-left: 5px;
+        background: #8e44ad;
+        color: #fff;
+      }
+      .btns button:first-child:hover {
+        color: #fff;
+      }
+      .btns button:hover {
+        color: #fff;
+        background: #8e44ad;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <span class="pro">PRO</span>
+      <img class="round" src="nayem.jpeg" alt="Md Nayem Gawhar" />
+      <h1>Md Nayem Gawhar</h1>
+      <h2>Web Developer</h2>
+      <p>
+        Hi, I'm Nayem, a passionate web developer with over 5 years of
+        experience in creating interactive and user-friendly web applications.
+      </p>
+      <div class="contact-info">
+        <p>Email: nayem.gawhar@gmail.com</p>
+        <p>Mobile: (+880) 1721-058643</p>
+      </div>
+      <ul class="card_info">
+        <li>
+          <span>Projects</span>
+          <span class="card_info_stats">26</span>
+        </li>
+        <li>
+          <span>Following</span>
+          <span class="card_info_stats">100</span>
+        </li>
+        <li>
+          <span>Followers</span>
+          <span class="card_info_stats">20</span>
+        </li>
+      </ul>
+      <div class="btns">
+        <button>Follow</button>
+        <button>Hire Me</button>
+      </div>
+    </div>
+  </body>
+</html>
